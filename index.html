@@ -1,245 +1,365 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Gil Vistoria Veicular em Alegre, ES. Vistorias de transferência, cautelar e preventiva com atendimento técnico e agilidade.">
-  <meta name="theme-color" content="#063c2d">
+  <meta name="description" content="Gil Vistoria Veicular em Alegre, ES. Vistorias de transferência, cautelar, preventiva e regularização para Alegre e a região do Caparaó.">
+  <meta name="theme-color" content="#006948">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="Gil Vistoria Veicular | Alegre - ES">
+  <meta property="og:description" content="Vistoria veicular em Alegre e região do Caparaó. Solicite atendimento e prepare sua documentação com orientação clara.">
   <title>Gil Vistoria Veicular | Alegre - ES</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
       theme: {
         extend: {
           colors: {
-            forest: { 50: '#eef8f4', 100: '#d8eee5', 500: '#0a8f62', 600: '#087753', 700: '#086044', 800: '#074d38', 900: '#063c2d', 950: '#02271d' },
-            lime: '#b9dc48',
-            cream: '#f7f8f3',
-            ink: '#14201b'
+            primary: '#006948',
+            'primary-container': '#00855d',
+            'on-primary': '#ffffff',
+            surface: '#f9f9f9',
+            'on-surface': '#1a1c1c',
+            'on-surface-variant': '#3d4a42',
+            outline: '#6d7a72'
           },
-          fontFamily: { sans: ['Manrope', 'sans-serif'] },
-          boxShadow: { soft: '0 24px 60px rgba(2,39,29,.12)' }
+          fontFamily: { sans: ['Plus Jakarta Sans', 'sans-serif'] }
         }
       }
     };
   </script>
   <style>
-    body { background: #f7f8f3; }
-    .hero-grid { background-image: linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px); background-size: 32px 32px; }
-    .material-symbols-rounded { font-variation-settings: 'FILL' 0, 'wght' 500, 'GRAD' 0, 'opsz' 24; }
-    .reveal { opacity: 0; transform: translateY(20px); transition: opacity .65s ease, transform .65s ease; }
-    .reveal.visible { opacity: 1; transform: none; }
+    body { background: #f9f9f9; }
+    section { scroll-margin-top: 5.5rem; }
+    .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    .field { width: 100%; border-radius: .5rem; background: #eeeeee; padding: .85rem 1rem; outline: none; }
+    .field:focus { background: #fff; box-shadow: 0 0 0 3px rgba(0,105,72,.18); }
     details[open] .faq-icon { transform: rotate(45deg); }
   </style>
 </head>
-<body class="font-sans text-ink antialiased">
-  <header class="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-forest-950/95 text-white backdrop-blur">
-    <div class="mx-auto flex h-20 max-w-7xl items-center justify-between px-5 lg:px-8">
-      <a href="#inicio" class="flex items-center gap-3" aria-label="Gil Vistoria - início">
-        <span class="grid h-11 w-11 place-items-center rounded-xl bg-lime text-forest-950">
-          <span class="material-symbols-rounded text-[28px]">verified</span>
-        </span>
-        <span>
-          <strong class="block text-lg font-extrabold leading-none tracking-tight">GIL VISTORIA</strong>
-          <small class="mt-1 block text-[10px] font-bold tracking-[.18em] text-lime">ALEGRE • ESPÍRITO SANTO</small>
+<body class="bg-surface font-sans text-on-surface antialiased">
+  <header class="fixed inset-x-0 top-0 z-50 bg-white/95 shadow-[0_1px_8px_rgba(0,0,0,0.04)] backdrop-blur-md">
+    <div class="mx-auto flex h-20 max-w-7xl items-center justify-between gap-4 px-4 lg:px-8">
+      <a href="#inicio" class="flex min-w-0 items-center gap-3" aria-label="Gil Vistoria Veicular - início">
+        <svg class="h-11 w-[80px] shrink-0" viewBox="0 0 58 50" role="img" aria-label="Logotipo Gil Vistoria Veicular">
+          <rect width="50" height="50" rx="12" fill="#059669"/>
+          <path d="M12 28L22 16H36L40 28H12Z" fill="#FFFFFF" fill-opacity="0.25"/>
+          <circle cx="18" cy="36" r="4.5" fill="#FFFFFF"/>
+          <circle cx="34" cy="36" r="4.5" fill="#FFFFFF"/>
+          <path d="M15 28L19 21H33L37 28H15Z" fill="#FFFFFF"/>
+          <circle cx="38" cy="14" r="11" fill="#10B981" stroke="#FFFFFF" stroke-width="2.5"/>
+          <path d="M33 14L37 18L44 11" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span class="min-w-0">
+          <strong class="block text-lg font-extrabold leading-tight tracking-tight">GIL VISTORIA</strong>
+          <span class="block text-[10px] font-bold uppercase tracking-[.16em] text-primary">Alegre - ES • Vistoria Veicular</span>
         </span>
       </a>
-      <nav class="hidden items-center gap-7 lg:flex" aria-label="Navegação principal">
-        <a class="text-sm font-semibold text-white/75 transition hover:text-lime" href="#servicos">Serviços</a>
-        <a class="text-sm font-semibold text-white/75 transition hover:text-lime" href="#como-funciona">Como funciona</a>
-        <a class="text-sm font-semibold text-white/75 transition hover:text-lime" href="#diferenciais">Diferenciais</a>
-        <a class="text-sm font-semibold text-white/75 transition hover:text-lime" href="#duvidas">Dúvidas</a>
-        <a class="rounded-xl bg-lime px-5 py-3 text-sm font-extrabold text-forest-950 transition hover:bg-white" href="#atendimento">Solicitar atendimento</a>
+      <nav class="hidden items-center gap-6 lg:flex" aria-label="Navegação principal">
+        <a class="text-sm font-semibold text-on-surface-variant transition hover:text-on-surface" href="#inicio">Início</a>
+        <a class="text-sm font-semibold text-on-surface-variant transition hover:text-on-surface" href="#servicos">Serviços</a>
+        <a class="text-sm font-semibold text-on-surface-variant transition hover:text-on-surface" href="#agendamento">Agendamento</a>
+        <a class="text-sm font-semibold text-on-surface-variant transition hover:text-on-surface" href="#diferenciais">Diferenciais</a>
+        <a class="text-sm font-semibold text-on-surface-variant transition hover:text-on-surface" href="#localizacao">Localização</a>
       </nav>
-      <button id="menu-button" class="grid h-11 w-11 place-items-center rounded-xl border border-white/20 lg:hidden" aria-expanded="false" aria-controls="mobile-menu" aria-label="Abrir menu">
-        <span class="material-symbols-rounded">menu</span>
+      <a class="hidden rounded-lg bg-primary px-4 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-primary-container sm:inline-flex" href="#agendamento">Solicitar atendimento</a>
+      <button id="menu-button" class="grid h-11 w-11 place-items-center rounded-lg text-primary lg:hidden" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Abrir menu">
+        <span class="material-symbols-outlined text-3xl">menu</span>
       </button>
     </div>
-    <nav id="mobile-menu" class="hidden border-t border-white/10 bg-forest-950 px-5 py-5 lg:hidden" aria-label="Navegação móvel">
+    <nav id="mobile-menu" class="hidden border-t border-slate-200 bg-white px-4 py-4 lg:hidden" aria-label="Navegação móvel">
       <div class="mx-auto flex max-w-7xl flex-col gap-1">
-        <a class="rounded-lg px-3 py-3 font-semibold hover:bg-white/10" href="#servicos">Serviços</a>
-        <a class="rounded-lg px-3 py-3 font-semibold hover:bg-white/10" href="#como-funciona">Como funciona</a>
-        <a class="rounded-lg px-3 py-3 font-semibold hover:bg-white/10" href="#diferenciais">Diferenciais</a>
-        <a class="rounded-lg px-3 py-3 font-semibold hover:bg-white/10" href="#duvidas">Dúvidas</a>
-        <a class="mt-2 rounded-lg bg-lime px-3 py-3 text-center font-extrabold text-forest-950" href="#atendimento">Solicitar atendimento</a>
+        <a class="rounded-lg px-3 py-3 font-semibold hover:bg-emerald-50" href="#inicio">Início</a>
+        <a class="rounded-lg px-3 py-3 font-semibold hover:bg-emerald-50" href="#servicos">Serviços</a>
+        <a class="rounded-lg px-3 py-3 font-semibold hover:bg-emerald-50" href="#agendamento">Agendamento</a>
+        <a class="rounded-lg px-3 py-3 font-semibold hover:bg-emerald-50" href="#diferenciais">Diferenciais</a>
+        <a class="rounded-lg px-3 py-3 font-semibold hover:bg-emerald-50" href="#localizacao">Localização</a>
+        <a class="mt-2 rounded-lg bg-primary px-3 py-3 text-center font-bold text-white" href="#agendamento">Solicitar atendimento</a>
       </div>
     </nav>
   </header>
 
   <main class="pt-20">
-    <section id="inicio" class="hero-grid relative overflow-hidden bg-forest-950 text-white">
-      <div class="absolute -right-32 top-12 h-96 w-96 rounded-full bg-forest-500/25 blur-3xl"></div>
-      <div class="mx-auto grid min-h-[680px] max-w-7xl items-center gap-14 px-5 py-20 lg:grid-cols-[1.08fr_.92fr] lg:px-8 lg:py-24">
-        <div class="relative z-10">
-          <div class="mb-7 inline-flex items-center gap-2 rounded-full border border-lime/30 bg-lime/10 px-4 py-2 text-xs font-extrabold uppercase tracking-[.14em] text-lime">
-            <span class="h-2 w-2 rounded-full bg-lime"></span>
-            Vistoria veicular em Alegre - ES
+    <section class="bg-[#f3f3f3] py-2">
+      <div class="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-2 px-4 text-xs font-semibold text-on-surface-variant lg:px-8">
+        <span class="inline-flex items-center gap-1.5"><span class="material-symbols-outlined text-[18px] text-primary">verified</span> Atendimento em Alegre e na microrregião do Caparaó</span>
+        <span class="inline-flex items-center gap-1.5"><span class="material-symbols-outlined text-[18px] text-primary">schedule</span> Confirme horário e documentos antes de se deslocar</span>
+      </div>
+    </section>
+
+    <section id="inicio" class="relative overflow-hidden py-16 lg:py-24">
+      <div class="pointer-events-none absolute left-1/2 top-12 h-[350px] w-[700px] -translate-x-1/2 rounded-full bg-primary/5 blur-3xl"></div>
+      <div class="relative z-10 mx-auto grid max-w-7xl items-center gap-10 px-4 lg:grid-cols-12 lg:px-8">
+        <div class="lg:col-span-7">
+          <div class="mb-5 inline-flex items-center gap-2 rounded-full bg-white px-4 py-1.5 shadow-sm">
+            <span class="h-2 w-2 rounded-full bg-primary"></span>
+            <span class="text-[11px] font-bold uppercase tracking-wider text-primary">Vistoria veicular em Alegre - ES</span>
           </div>
-          <h1 class="max-w-3xl text-4xl font-extrabold leading-[1.08] tracking-[-.04em] sm:text-5xl lg:text-6xl">Vistoria segura, ágil e sem complicação.</h1>
-          <p class="mt-6 max-w-2xl text-base leading-8 text-white/70 sm:text-lg">Atendimento técnico para quem precisa transferir, avaliar ou regularizar seu veículo com mais tranquilidade em Alegre e região do Caparaó.</p>
-          <div class="mt-9 flex flex-col gap-3 sm:flex-row">
-            <a href="#atendimento" class="inline-flex items-center justify-center gap-2 rounded-xl bg-lime px-6 py-4 font-extrabold text-forest-950 transition hover:-translate-y-0.5 hover:bg-white">
-              Solicitar atendimento <span class="material-symbols-rounded text-xl">arrow_forward</span>
-            </a>
-            <a href="#servicos" class="inline-flex items-center justify-center gap-2 rounded-xl border border-white/20 px-6 py-4 font-bold transition hover:bg-white/10">
-              Conhecer serviços
-            </a>
+          <h1 class="max-w-3xl text-4xl font-extrabold tracking-tight sm:text-5xl">A sua vistoria veicular em Alegre, com clareza e sem complicação</h1>
+          <p class="mt-5 max-w-2xl text-base leading-7 text-on-surface-variant sm:text-lg">Atendimento técnico para transferência, cautelar, preventiva e regularização. Oriente-se antes de levar o veículo e prepare a documentação necessária.</p>
+          <div class="mt-8 grid max-w-xl grid-cols-1 gap-3 sm:grid-cols-3">
+            <div class="rounded-xl bg-white p-4 shadow-sm"><strong class="block text-xl text-primary">Alegre</strong><span class="text-xs font-medium text-on-surface-variant">Unidade no Caparaó</span></div>
+            <div class="rounded-xl bg-white p-4 shadow-sm"><strong class="block text-xl text-primary">4</strong><span class="text-xs font-medium text-on-surface-variant">Modalidades de vistoria</span></div>
+            <div class="rounded-xl bg-white p-4 shadow-sm"><strong class="block text-xl text-primary">ES</strong><span class="text-xs font-medium text-on-surface-variant">Atendimento local</span></div>
           </div>
-          <div class="mt-10 grid max-w-2xl grid-cols-1 gap-3 sm:grid-cols-3">
-            <div class="flex items-center gap-3 rounded-xl bg-white/[.07] p-4"><span class="material-symbols-rounded text-lime">speed</span><span class="text-sm font-bold">Atendimento ágil</span></div>
-            <div class="flex items-center gap-3 rounded-xl bg-white/[.07] p-4"><span class="material-symbols-rounded text-lime">fact_check</span><span class="text-sm font-bold">Análise técnica</span></div>
-            <div class="flex items-center gap-3 rounded-xl bg-white/[.07] p-4"><span class="material-symbols-rounded text-lime">shield</span><span class="text-sm font-bold">Mais segurança</span></div>
+          <div class="mt-8 flex flex-wrap gap-3">
+            <a class="inline-flex items-center gap-2 rounded-lg bg-primary px-6 py-3.5 font-semibold text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-primary-container" href="#agendamento">
+              <span class="material-symbols-outlined text-[20px]">calendar_month</span> Agendar em Alegre
+            </a>
+            <a class="inline-flex items-center gap-2 rounded-lg bg-white px-6 py-3.5 font-semibold shadow-sm transition hover:bg-[#eeeeee]" href="#servicos">
+              <span class="material-symbols-outlined text-[20px] text-primary">fact_check</span> Ver serviços
+            </a>
           </div>
         </div>
-        <div class="relative">
-          <div class="relative overflow-hidden rounded-[2rem] border border-white/10 bg-white p-3 shadow-soft">
-            <img class="h-[420px] w-full rounded-[1.4rem] object-cover" src="https://images.unsplash.com/photo-1487754180451-c456f719a1fc?auto=format&fit=crop&w=1200&q=85" alt="Profissional realizando inspeção em veículo">
-            <div class="absolute inset-x-7 bottom-7 rounded-2xl bg-forest-950/90 p-5 backdrop-blur">
-              <div class="flex items-center gap-4">
-                <span class="grid h-12 w-12 shrink-0 place-items-center rounded-xl bg-lime text-forest-950"><span class="material-symbols-rounded">directions_car</span></span>
-                <div><strong class="block text-base">Seu veículo em boas mãos</strong><span class="text-sm text-white/60">Cuidado em cada etapa da vistoria</span></div>
+        <div class="lg:col-span-5">
+          <div class="relative overflow-hidden rounded-2xl bg-white shadow-xl">
+            <img class="h-80 w-full object-cover lg:h-[420px]" src="https://images.unsplash.com/photo-1487754180451-c456f719a1fc?auto=format&fit=crop&w=1200&q=80" alt="Profissional realizando conferência técnica em um veículo">
+            <div class="absolute right-4 top-4 rounded-lg bg-white/95 px-3 py-1.5 text-xs font-bold shadow-md">
+              <span class="inline-flex items-center gap-1.5"><span class="material-symbols-outlined text-sm text-primary">timer</span> Processo objetivo</span>
+            </div>
+            <div class="absolute inset-x-4 bottom-4 flex items-center justify-between rounded-xl bg-white/95 p-3 shadow-lg">
+              <div class="flex items-center gap-2">
+                <span class="grid h-8 w-8 place-items-center rounded-lg bg-emerald-100 text-primary"><span class="material-symbols-outlined text-[20px]">verified</span></span>
+                <div>
+                  <p class="text-xs font-bold leading-none">Gil Vistoria Veicular</p>
+                  <p class="text-[11px] text-on-surface-variant">Alegre e região do Caparaó</p>
+                </div>
+              </div>
+              <span class="material-symbols-outlined text-primary">check_circle</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="agendamento" class="bg-[#f3f3f3] py-20">
+      <div class="mx-auto max-w-7xl px-4 lg:px-8">
+        <div class="mx-auto mb-10 max-w-2xl text-center">
+          <div class="mb-3 inline-flex items-center gap-1 rounded-full bg-emerald-100 px-3 py-1 text-[11px] font-bold uppercase text-primary">
+            <span class="material-symbols-outlined text-[16px]">flash_on</span> Solicitação de atendimento
+          </div>
+          <h2 class="text-3xl font-extrabold tracking-tight sm:text-4xl">Prepare sua solicitação em 1 minuto</h2>
+          <p class="mt-3 text-on-surface-variant">Informe placa, contato e o tipo de vistoria. Como o WhatsApp oficial da unidade não foi confirmado em fonte pública, o site não usa número provisório: a mensagem fica pronta para você enviar pelo canal oficial.</p>
+        </div>
+        <div class="mx-auto max-w-4xl overflow-hidden rounded-2xl bg-white shadow-xl">
+          <div class="flex flex-wrap items-center justify-between gap-2 bg-[#2f3131] px-5 py-3 text-xs font-semibold tracking-wide text-white">
+            <span class="inline-flex items-center gap-2"><span class="material-symbols-outlined text-[18px] text-emerald-300">terminal</span> SOLICITAÇÃO • UNIDADE ALEGRE</span>
+            <span class="text-emerald-300">Sem número de WhatsApp provisório</span>
+          </div>
+          <form id="booking-form" class="space-y-8 p-6 md:p-10">
+            <div class="grid gap-8 md:grid-cols-2">
+              <div>
+                <label class="mb-2 flex items-center justify-between text-sm font-semibold" for="placa-input"><span>Placa do veículo *</span><span class="text-xs font-medium text-on-surface-variant">Mercosul ou antiga</span></label>
+                <div class="rounded-xl bg-[#eeeeee] p-2">
+                  <div class="flex items-center justify-between rounded-t-md bg-[#003399] px-3 py-1 text-xs font-bold tracking-wider text-white">
+                    <span>BRASIL</span>
+                    <span class="material-symbols-outlined text-[16px]">directions_car</span>
+                  </div>
+                  <input id="placa-input" class="w-full rounded-b-md bg-white py-3 text-center text-2xl font-extrabold uppercase tracking-[.3em]" maxlength="8" placeholder="BRA2E19" required type="text">
+                </div>
+              </div>
+              <div class="flex flex-col justify-between gap-5">
+                <div>
+                  <label class="mb-2 block text-sm font-semibold" for="phone-input">Telefone / WhatsApp *</label>
+                  <input id="phone-input" class="field" required type="tel" placeholder="(28) 9xxxx-xxxx" autocomplete="tel">
+                </div>
+                <div>
+                  <label class="mb-2 block text-sm font-semibold" for="service-type">Tipo de vistoria *</label>
+                  <select id="service-type" class="field cursor-pointer appearance-none" required>
+                    <option value="transferencia">Vistoria de transferência</option>
+                    <option value="cautelar">Vistoria cautelar (compra e venda)</option>
+                    <option value="preventiva">Vistoria preventiva</option>
+                    <option value="segunda-via">Segunda via / regularização</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div>
+              <p class="mb-3 text-sm font-semibold">Turno preferido em Alegre</p>
+              <div class="grid gap-3 sm:grid-cols-3">
+                <label class="flex cursor-pointer items-start gap-3 rounded-lg bg-[#eeeeee] p-3">
+                  <input checked class="mt-1 accent-primary" name="shift" type="radio" value="Manhã">
+                  <span><strong class="block text-sm">Manhã</strong><span class="text-xs text-on-surface-variant">Início do expediente</span></span>
+                </label>
+                <label class="flex cursor-pointer items-start gap-3 rounded-lg bg-[#eeeeee] p-3">
+                  <input class="mt-1 accent-primary" name="shift" type="radio" value="Almoço">
+                  <span><strong class="block text-sm">Meio do dia</strong><span class="text-xs text-on-surface-variant">Confirme disponibilidade</span></span>
+                </label>
+                <label class="flex cursor-pointer items-start gap-3 rounded-lg bg-[#eeeeee] p-3">
+                  <input class="mt-1 accent-primary" name="shift" type="radio" value="Tarde">
+                  <span><strong class="block text-sm">Tarde</strong><span class="text-xs text-on-surface-variant">Final do expediente</span></span>
+                </label>
+              </div>
+            </div>
+            <div class="flex flex-col items-start justify-between gap-4 rounded-xl bg-[#eeeeee] p-5 sm:flex-row sm:items-center">
+              <p class="flex items-start gap-2 text-sm text-on-surface-variant"><span class="material-symbols-outlined text-primary">shield</span> Nenhum pagamento é cobrado neste site. Use a mensagem gerada no canal oficial da unidade.</p>
+              <button class="inline-flex w-full shrink-0 items-center justify-center gap-2 rounded-lg bg-primary px-6 py-3.5 font-semibold text-white shadow-md hover:bg-primary-container sm:w-auto" type="submit">
+                <span class="material-symbols-outlined text-[20px]">bolt</span> Preparar solicitação
+              </button>
+            </div>
+            <div id="booking-success" class="hidden rounded-xl border border-emerald-200 bg-emerald-50 p-6" role="status">
+              <h3 class="font-bold">Solicitação preparada</h3>
+              <p class="mt-2 text-sm text-on-surface-variant">Copie o texto abaixo e envie pelo canal oficial da Gil Vistoria quando estiver disponível. Este site não redireciona para um WhatsApp inventado.</p>
+              <textarea id="message-output" class="field mt-4 min-h-40 bg-white text-sm" readonly></textarea>
+              <button id="copy-message" class="mt-3 inline-flex items-center gap-2 rounded-lg bg-primary px-4 py-3 text-sm font-bold text-white" type="button">
+                <span class="material-symbols-outlined text-lg">content_copy</span> Copiar solicitação
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section id="servicos" class="py-20">
+      <div class="mx-auto max-w-7xl px-4 lg:px-8">
+        <div class="mb-12 flex flex-col justify-between gap-4 md:flex-row md:items-end">
+          <div>
+            <span class="text-xs font-bold uppercase tracking-widest text-primary">Soluções técnicas</span>
+            <h2 class="mt-2 text-3xl font-extrabold tracking-tight sm:text-4xl">Serviços de vistoria</h2>
+          </div>
+          <p class="max-w-md text-sm leading-6 text-on-surface-variant">Conferência de identificação, itens obrigatórios e orientação para o processo veicular que você precisa concluir.</p>
+        </div>
+        <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+          <article class="relative overflow-hidden rounded-xl bg-white p-6 shadow-sm">
+            <div class="absolute bottom-0 left-0 top-0 w-1.5 bg-primary"></div>
+            <span class="grid h-12 w-12 place-items-center rounded-lg bg-emerald-50 text-primary"><span class="material-symbols-outlined">swap_horiz</span></span>
+            <span class="mt-4 inline-block rounded bg-emerald-100 px-2 py-0.5 text-[11px] font-bold uppercase text-primary">Transferência</span>
+            <h3 class="mt-2 text-lg font-bold">Vistoria de transferência</h3>
+            <p class="mt-2 text-sm leading-6 text-on-surface-variant">Conferência dos identificadores e itens necessários à mudança de propriedade ou município.</p>
+            <a class="mt-4 inline-flex items-center gap-1 text-sm font-bold text-primary" href="#agendamento" data-service="transferencia">Agendar transferência <span class="material-symbols-outlined text-base">arrow_forward</span></a>
+          </article>
+          <article class="relative overflow-hidden rounded-xl bg-white p-6 shadow-sm">
+            <div class="absolute bottom-0 left-0 top-0 w-1.5 bg-slate-400"></div>
+            <span class="grid h-12 w-12 place-items-center rounded-lg bg-slate-100 text-slate-600"><span class="material-symbols-outlined">policy</span></span>
+            <span class="mt-4 inline-block rounded bg-slate-100 px-2 py-0.5 text-[11px] font-bold uppercase">Compra e venda</span>
+            <h3 class="mt-2 text-lg font-bold">Vistoria cautelar</h3>
+            <p class="mt-2 text-sm leading-6 text-on-surface-variant">Avaliação detalhada para apoiar a compra ou venda de seminovos com mais segurança.</p>
+            <a class="mt-4 inline-flex items-center gap-1 text-sm font-bold text-primary" href="#agendamento" data-service="cautelar">Solicitar cautelar <span class="material-symbols-outlined text-base">arrow_forward</span></a>
+          </article>
+          <article class="rounded-xl bg-white p-6 shadow-sm">
+            <span class="grid h-12 w-12 place-items-center rounded-lg bg-slate-100 text-slate-600"><span class="material-symbols-outlined">health_and_safety</span></span>
+            <span class="mt-4 inline-block rounded bg-slate-100 px-2 py-0.5 text-[11px] font-bold uppercase">Segurança</span>
+            <h3 class="mt-2 text-lg font-bold">Vistoria preventiva</h3>
+            <p class="mt-2 text-sm leading-6 text-on-surface-variant">Checkup visual de itens importantes para conservação e segurança antes de viajar.</p>
+            <a class="mt-4 inline-flex items-center gap-1 text-sm font-bold text-primary" href="#agendamento" data-service="preventiva">Agendar preventiva <span class="material-symbols-outlined text-base">arrow_forward</span></a>
+          </article>
+          <article class="rounded-xl bg-white p-6 shadow-sm">
+            <span class="grid h-12 w-12 place-items-center rounded-lg bg-slate-100 text-slate-600"><span class="material-symbols-outlined">description</span></span>
+            <span class="mt-4 inline-block rounded bg-slate-100 px-2 py-0.5 text-[11px] font-bold uppercase">Documental</span>
+            <h3 class="mt-2 text-lg font-bold">Segunda via e regularização</h3>
+            <p class="mt-2 text-sm leading-6 text-on-surface-variant">Orientação inicial para segunda via, pendências e regularização do processo veicular.</p>
+            <a class="mt-4 inline-flex items-center gap-1 text-sm font-bold text-primary" href="#agendamento" data-service="segunda-via">Consultar regularização <span class="material-symbols-outlined text-base">arrow_forward</span></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="diferenciais" class="bg-[#f3f3f3] py-20">
+      <div class="mx-auto grid max-w-7xl items-center gap-10 px-4 lg:grid-cols-12 lg:px-8">
+        <div class="rounded-2xl bg-white p-6 shadow-sm lg:col-span-6 lg:p-8">
+          <div class="mb-6 flex items-center justify-between rounded-lg bg-[#eeeeee] px-4 py-2 text-xs font-bold">
+            <span class="text-primary">PROTOCOLO DE ATENDIMENTO</span>
+            <span class="text-on-surface-variant">ALEGRE - ES</span>
+          </div>
+          <div class="space-y-5">
+            <div>
+              <div class="mb-1 flex justify-between text-sm font-semibold"><span class="inline-flex items-center gap-1.5"><span class="material-symbols-outlined text-[18px] text-primary">document_scanner</span> Conferência de identificação</span></div>
+              <div class="h-2 overflow-hidden rounded-full bg-slate-200"><div class="h-full w-full rounded-full bg-primary"></div></div>
+            </div>
+            <div>
+              <div class="mb-1 flex justify-between text-sm font-semibold"><span class="inline-flex items-center gap-1.5"><span class="material-symbols-outlined text-[18px] text-primary">build</span> Análise visual e estrutural aparente</span></div>
+              <div class="h-2 overflow-hidden rounded-full bg-slate-200"><div class="h-full w-full rounded-full bg-primary"></div></div>
+            </div>
+            <div>
+              <div class="mb-1 flex justify-between text-sm font-semibold"><span class="inline-flex items-center gap-1.5"><span class="material-symbols-outlined text-[18px] text-primary">record_voice_over</span> Orientação sobre os próximos passos</span></div>
+              <div class="h-2 overflow-hidden rounded-full bg-slate-200"><div class="h-full w-full rounded-full bg-primary"></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="lg:col-span-6">
+          <span class="text-xs font-bold uppercase tracking-widest text-primary">Por que escolher a Gil</span>
+          <h2 class="mt-2 text-3xl font-extrabold tracking-tight">Rigor técnico com atendimento próximo em Alegre</h2>
+          <p class="mt-4 leading-7 text-on-surface-variant">A Gil Vistoria Veicular atende quem precisa transferir, avaliar ou regularizar o veículo na região do Caparaó, com processo objetivo e informação clara em cada etapa.</p>
+          <div class="mt-6 grid gap-5 sm:grid-cols-2">
+            <div class="flex gap-3"><span class="mt-1 grid h-8 w-8 shrink-0 place-items-center rounded bg-emerald-50 text-primary"><span class="material-symbols-outlined text-[18px]">hourglass_disabled</span></span><div><h3 class="font-bold">Agilidade</h3><p class="text-sm text-on-surface-variant">Solicitação prévia para organizar o atendimento.</p></div></div>
+            <div class="flex gap-3"><span class="mt-1 grid h-8 w-8 shrink-0 place-items-center rounded bg-emerald-50 text-primary"><span class="material-symbols-outlined text-[18px]">precision_manufacturing</span></span><div><h3 class="font-bold">Atenção aos detalhes</h3><p class="text-sm text-on-surface-variant">Conferência cuidadosa dos pontos avaliados.</p></div></div>
+            <div class="flex gap-3"><span class="mt-1 grid h-8 w-8 shrink-0 place-items-center rounded bg-emerald-50 text-primary"><span class="material-symbols-outlined text-[18px]">pin_drop</span></span><div><h3 class="font-bold">Atendimento local</h3><p class="text-sm text-on-surface-variant">Serviço em Alegre para a região do Caparaó.</p></div></div>
+            <div class="flex gap-3"><span class="mt-1 grid h-8 w-8 shrink-0 place-items-center rounded bg-emerald-50 text-primary"><span class="material-symbols-outlined text-[18px]">verified</span></span><div><h3 class="font-bold">Orientação clara</h3><p class="text-sm text-on-surface-variant">Explicação simples sobre documentos e fluxo.</p></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="localizacao" class="py-20">
+      <div class="mx-auto max-w-7xl px-4 lg:px-8">
+        <div class="rounded-2xl bg-white p-6 shadow-lg md:p-10">
+          <div class="grid items-center gap-10 lg:grid-cols-12">
+            <div class="lg:col-span-6">
+              <span class="text-xs font-bold uppercase tracking-widest text-primary">Unidade Alegre - ES</span>
+              <h2 class="mt-2 text-2xl font-extrabold tracking-tight sm:text-3xl">Encontre a Gil Vistoria Veicular</h2>
+              <p class="mt-4 leading-7 text-on-surface-variant">O endereço completo e o telefone oficial não foram confirmados em fonte pública confiável. Use a busca no mapa pelo nome da empresa e confirme horário e documentos antes de se deslocar.</p>
+              <div class="mt-6 space-y-4 text-sm">
+                <div class="flex gap-2"><span class="material-symbols-outlined text-primary">location_on</span><div><strong class="block">Cidade</strong><span class="text-on-surface-variant">Alegre, Espírito Santo — região do Caparaó</span></div></div>
+                <div class="flex gap-2"><span class="material-symbols-outlined text-primary">contact_support</span><div><strong class="block">Contato</strong><span class="text-on-surface-variant">Canal oficial ainda não publicado neste site (evitamos números provisórios).</span></div></div>
+              </div>
+              <a class="mt-8 inline-flex items-center gap-2 rounded-lg bg-[#eeeeee] px-5 py-3 font-semibold hover:bg-slate-200" href="https://www.google.com/maps/search/?api=1&query=Gil+Vistoria+Veicular+Alegre+ES" rel="noopener noreferrer" target="_blank">
+                <span class="material-symbols-outlined text-primary">directions</span> Buscar no Google Maps
+              </a>
+            </div>
+            <div class="flex min-h-72 items-center justify-center rounded-xl bg-emerald-50 lg:col-span-6">
+              <div class="p-8 text-center">
+                <span class="mx-auto grid h-16 w-16 place-items-center rounded-full bg-white text-primary shadow"><span class="material-symbols-outlined text-4xl">pin_drop</span></span>
+                <h3 class="mt-5 text-xl font-bold">Alegre • Espírito Santo</h3>
+                <p class="mt-2 text-sm text-on-surface-variant">Confirme a localização atualizada antes do deslocamento.</p>
               </div>
             </div>
           </div>
-          <div class="absolute -left-5 -top-5 hidden h-24 w-24 rounded-3xl border border-lime/30 lg:block"></div>
         </div>
       </div>
     </section>
 
-    <section id="servicos" class="scroll-mt-24 py-20 lg:py-28">
-      <div class="mx-auto max-w-7xl px-5 lg:px-8">
-        <div class="reveal max-w-2xl">
-          <span class="text-xs font-extrabold uppercase tracking-[.18em] text-forest-600">Nossos serviços</span>
-          <h2 class="mt-3 text-3xl font-extrabold tracking-[-.03em] sm:text-4xl">A vistoria certa para cada necessidade</h2>
-          <p class="mt-4 leading-7 text-slate-600">Conte com uma avaliação cuidadosa para tomar decisões e cumprir as etapas do seu processo veicular.</p>
+    <section class="bg-[#2f3131] py-16 text-white">
+      <div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-8 px-4 lg:flex-row lg:px-8">
+        <div class="text-center lg:text-left">
+          <span class="text-xs font-bold uppercase tracking-wider text-emerald-300">Sem espera • Sem número inventado</span>
+          <h2 class="mt-2 text-2xl font-extrabold">Pronto para solicitar sua vistoria em Alegre?</h2>
+          <p class="mt-3 max-w-xl text-sm text-neutral-300">Prepare a solicitação no formulário e leve a documentação do veículo. Confirme o canal oficial da unidade antes de enviar.</p>
         </div>
-        <div class="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
-          <article class="reveal rounded-2xl border border-slate-200 bg-white p-7 transition hover:-translate-y-1 hover:shadow-soft">
-            <span class="grid h-12 w-12 place-items-center rounded-xl bg-forest-50 text-forest-600"><span class="material-symbols-rounded">swap_horiz</span></span>
-            <h3 class="mt-6 text-lg font-extrabold">Transferência</h3>
-            <p class="mt-3 text-sm leading-6 text-slate-600">Verificação dos itens e identificadores necessários ao processo de mudança de propriedade.</p>
-          </article>
-          <article class="reveal rounded-2xl border border-slate-200 bg-white p-7 transition hover:-translate-y-1 hover:shadow-soft">
-            <span class="grid h-12 w-12 place-items-center rounded-xl bg-forest-50 text-forest-600"><span class="material-symbols-rounded">policy</span></span>
-            <h3 class="mt-6 text-lg font-extrabold">Vistoria cautelar</h3>
-            <p class="mt-3 text-sm leading-6 text-slate-600">Avaliação detalhada para apoiar negociações de compra e venda com mais confiança.</p>
-          </article>
-          <article class="reveal rounded-2xl border border-slate-200 bg-white p-7 transition hover:-translate-y-1 hover:shadow-soft">
-            <span class="grid h-12 w-12 place-items-center rounded-xl bg-forest-50 text-forest-600"><span class="material-symbols-rounded">health_and_safety</span></span>
-            <h3 class="mt-6 text-lg font-extrabold">Preventiva</h3>
-            <p class="mt-3 text-sm leading-6 text-slate-600">Conferência visual de itens importantes para a segurança e conservação do veículo.</p>
-          </article>
-          <article class="reveal rounded-2xl border border-slate-200 bg-white p-7 transition hover:-translate-y-1 hover:shadow-soft">
-            <span class="grid h-12 w-12 place-items-center rounded-xl bg-forest-50 text-forest-600"><span class="material-symbols-rounded">description</span></span>
-            <h3 class="mt-6 text-lg font-extrabold">Regularização</h3>
-            <p class="mt-3 text-sm leading-6 text-slate-600">Orientação inicial para identificar a vistoria adequada ao seu processo documental.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section id="como-funciona" class="scroll-mt-24 bg-white py-20 lg:py-28">
-      <div class="mx-auto max-w-7xl px-5 lg:px-8">
-        <div class="grid gap-14 lg:grid-cols-[.85fr_1.15fr] lg:items-center">
-          <div class="reveal">
-            <span class="text-xs font-extrabold uppercase tracking-[.18em] text-forest-600">Como funciona</span>
-            <h2 class="mt-3 text-3xl font-extrabold tracking-[-.03em] sm:text-4xl">Um processo simples do início ao fim</h2>
-            <p class="mt-5 leading-7 text-slate-600">Prepare os documentos do veículo e do proprietário. A equipe realiza a conferência e orienta sobre os próximos passos.</p>
-            <a href="#atendimento" class="mt-7 inline-flex items-center gap-2 font-extrabold text-forest-600 hover:text-forest-800">Começar agora <span class="material-symbols-rounded">arrow_forward</span></a>
-          </div>
-          <ol class="grid gap-4 sm:grid-cols-3">
-            <li class="reveal rounded-2xl bg-cream p-7"><span class="text-4xl font-extrabold text-forest-100">01</span><h3 class="mt-8 font-extrabold">Solicite atendimento</h3><p class="mt-3 text-sm leading-6 text-slate-600">Informe qual serviço você procura e os dados básicos do veículo.</p></li>
-            <li class="reveal rounded-2xl bg-forest-900 p-7 text-white"><span class="text-4xl font-extrabold text-lime/50">02</span><h3 class="mt-8 font-extrabold">Faça a vistoria</h3><p class="mt-3 text-sm leading-6 text-white/60">Apresente o veículo e a documentação para a análise técnica.</p></li>
-            <li class="reveal rounded-2xl bg-cream p-7"><span class="text-4xl font-extrabold text-forest-100">03</span><h3 class="mt-8 font-extrabold">Receba a orientação</h3><p class="mt-3 text-sm leading-6 text-slate-600">Entenda o resultado e siga com as etapas necessárias do processo.</p></li>
-          </ol>
-        </div>
-      </div>
-    </section>
-
-    <section id="diferenciais" class="scroll-mt-24 bg-forest-50 py-20 lg:py-28">
-      <div class="mx-auto max-w-7xl px-5 lg:px-8">
-        <div class="grid gap-12 lg:grid-cols-2 lg:items-center">
-          <div class="reveal relative overflow-hidden rounded-[2rem] bg-forest-900 p-8 text-white sm:p-12">
-            <div class="absolute -right-16 -top-16 h-64 w-64 rounded-full bg-lime/10"></div>
-            <span class="material-symbols-rounded text-5xl text-lime">workspace_premium</span>
-            <h2 class="relative mt-8 text-3xl font-extrabold tracking-[-.03em]">Rigor técnico com atendimento próximo</h2>
-            <p class="relative mt-5 leading-7 text-white/65">Clareza, cuidado e organização para tornar sua experiência de vistoria mais tranquila.</p>
-          </div>
-          <div class="grid gap-4 sm:grid-cols-2">
-            <div class="reveal rounded-2xl bg-white p-6"><span class="material-symbols-rounded text-forest-600">timer</span><h3 class="mt-4 font-extrabold">Agilidade</h3><p class="mt-2 text-sm leading-6 text-slate-600">Processo objetivo e atenção ao seu tempo.</p></div>
-            <div class="reveal rounded-2xl bg-white p-6"><span class="material-symbols-rounded text-forest-600">manage_search</span><h3 class="mt-4 font-extrabold">Atenção aos detalhes</h3><p class="mt-2 text-sm leading-6 text-slate-600">Conferência cuidadosa dos pontos avaliados.</p></div>
-            <div class="reveal rounded-2xl bg-white p-6"><span class="material-symbols-rounded text-forest-600">record_voice_over</span><h3 class="mt-4 font-extrabold">Orientação clara</h3><p class="mt-2 text-sm leading-6 text-slate-600">Informação simples em todas as etapas.</p></div>
-            <div class="reveal rounded-2xl bg-white p-6"><span class="material-symbols-rounded text-forest-600">location_on</span><h3 class="mt-4 font-extrabold">Atendimento local</h3><p class="mt-2 text-sm leading-6 text-slate-600">Serviço em Alegre para toda a região.</p></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="duvidas" class="scroll-mt-24 py-20 lg:py-28">
-      <div class="mx-auto max-w-4xl px-5 lg:px-8">
-        <div class="reveal text-center">
-          <span class="text-xs font-extrabold uppercase tracking-[.18em] text-forest-600">Dúvidas frequentes</span>
-          <h2 class="mt-3 text-3xl font-extrabold tracking-[-.03em] sm:text-4xl">Antes de levar seu veículo</h2>
-        </div>
-        <div class="mt-10 space-y-3">
-          <details class="reveal group rounded-2xl border border-slate-200 bg-white p-6">
-            <summary class="flex cursor-pointer list-none items-center justify-between gap-4 font-extrabold">Quais documentos devo levar?<span class="faq-icon material-symbols-rounded transition">add</span></summary>
-            <p class="mt-4 text-sm leading-7 text-slate-600">Tenha em mãos um documento oficial com foto e a documentação disponível do veículo. Dependendo do serviço, outros documentos podem ser necessários.</p>
-          </details>
-          <details class="reveal group rounded-2xl border border-slate-200 bg-white p-6">
-            <summary class="flex cursor-pointer list-none items-center justify-between gap-4 font-extrabold">O proprietário precisa estar presente?<span class="faq-icon material-symbols-rounded transition">add</span></summary>
-            <p class="mt-4 text-sm leading-7 text-slate-600">Nem sempre. Porém, quem apresentar o veículo deve estar com a documentação necessária para o tipo de vistoria solicitado.</p>
-          </details>
-          <details class="reveal group rounded-2xl border border-slate-200 bg-white p-6">
-            <summary class="flex cursor-pointer list-none items-center justify-between gap-4 font-extrabold">Como preparar o veículo?<span class="faq-icon material-symbols-rounded transition">add</span></summary>
-            <p class="mt-4 text-sm leading-7 text-slate-600">Mantenha o veículo limpo, especialmente nas áreas de identificação. Verifique também se os itens básicos estão acessíveis para a conferência.</p>
-          </details>
-        </div>
-      </div>
-    </section>
-
-    <section id="atendimento" class="scroll-mt-20 bg-forest-950 py-20 text-white lg:py-24">
-      <div class="mx-auto max-w-7xl px-5 lg:px-8">
-        <div class="reveal rounded-[2rem] border border-white/10 bg-white/[.06] p-8 sm:p-12">
-          <div class="grid gap-10 lg:grid-cols-[1fr_.8fr] lg:items-center">
-            <div>
-              <span class="text-xs font-extrabold uppercase tracking-[.18em] text-lime">Atendimento em Alegre - ES</span>
-              <h2 class="mt-3 text-3xl font-extrabold tracking-[-.03em] sm:text-4xl">Pronto para fazer sua vistoria?</h2>
-              <p class="mt-5 max-w-2xl leading-7 text-white/65">Consulte os canais oficiais da Gil Vistoria para confirmar endereço, disponibilidade e documentação antes de se deslocar.</p>
-            </div>
-            <div class="rounded-2xl bg-white p-6 text-ink">
-              <span class="grid h-12 w-12 place-items-center rounded-xl bg-forest-50 text-forest-600"><span class="material-symbols-rounded">pin_drop</span></span>
-              <strong class="mt-5 block text-lg">Gil Vistoria Veicular</strong>
-              <span class="mt-1 block text-sm text-slate-600">Alegre, Espírito Santo</span>
-              <a class="mt-5 inline-flex w-full items-center justify-center gap-2 rounded-xl bg-forest-600 px-5 py-3.5 font-extrabold text-white transition hover:bg-forest-800" href="https://www.google.com/maps/search/?api=1&query=Gil+Vistoria+Veicular+Alegre+ES" target="_blank" rel="noopener noreferrer">
-                Buscar no mapa <span class="material-symbols-rounded text-xl">open_in_new</span>
-              </a>
-            </div>
-          </div>
-        </div>
+        <a class="inline-flex w-full items-center justify-center gap-2 rounded-lg bg-primary px-8 py-3.5 font-semibold text-white hover:bg-primary-container sm:w-auto" href="#agendamento">
+          <span class="material-symbols-outlined">calendar_today</span> Preparar agendamento
+        </a>
       </div>
     </section>
   </main>
 
-  <footer class="bg-[#031e17] py-10 text-white/60">
-    <div class="mx-auto flex max-w-7xl flex-col gap-6 px-5 sm:flex-row sm:items-center sm:justify-between lg:px-8">
-      <div class="flex items-center gap-3 text-white">
-        <span class="grid h-9 w-9 place-items-center rounded-lg bg-lime text-forest-950"><span class="material-symbols-rounded text-xl">verified</span></span>
-        <strong class="text-sm tracking-wide">GIL VISTORIA VEICULAR</strong>
+  <footer class="bg-[#eeeeee] py-12">
+    <div class="mx-auto grid max-w-7xl gap-8 px-4 md:grid-cols-3 lg:px-8">
+      <div>
+        <strong class="text-lg">Gil Vistoria Veicular</strong>
+        <p class="mt-3 text-sm leading-6 text-on-surface-variant">Vistoria veicular em Alegre e na região do Caparaó. Rigor técnico e atendimento próximo para quem precisa regularizar ou avaliar um veículo.</p>
       </div>
-      <p class="text-xs">© <span id="year"></span> Gil Vistoria Veicular • Alegre - ES</p>
-      <a class="text-xs font-bold transition hover:text-lime" href="#inicio">Voltar ao topo ↑</a>
+      <div>
+        <h3 class="font-bold">Unidade Alegre - ES</h3>
+        <p class="mt-3 text-sm text-on-surface-variant">Alegre, Espírito Santo</p>
+        <p class="mt-1 text-sm text-on-surface-variant">Confirme endereço e horário pelos canais oficiais.</p>
+      </div>
+      <div>
+        <h3 class="font-bold">Atendimento</h3>
+        <p class="mt-3 text-sm text-on-surface-variant">Solicite pelo formulário deste site e envie a mensagem gerada quando o canal oficial estiver disponível.</p>
+      </div>
     </div>
+    <p class="mx-auto mt-10 max-w-7xl px-4 text-xs text-on-surface-variant lg:px-8">© <span id="year"></span> Gil Vistoria Veicular. Todos os direitos reservados.</p>
   </footer>
 
   <script>
     const menuButton = document.getElementById('menu-button');
     const mobileMenu = document.getElementById('mobile-menu');
-    const menuIcon = menuButton.querySelector('.material-symbols-rounded');
+    const menuIcon = menuButton.querySelector('.material-symbols-outlined');
 
     const closeMenu = () => {
       mobileMenu.classList.add('hidden');
@@ -253,7 +373,6 @@
         closeMenu();
         return;
       }
-
       mobileMenu.classList.remove('hidden');
       menuButton.setAttribute('aria-expanded', 'true');
       menuIcon.textContent = 'close';
@@ -261,15 +380,72 @@
 
     mobileMenu.querySelectorAll('a').forEach((link) => link.addEventListener('click', closeMenu));
 
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (!entry.isIntersecting) return;
-        entry.target.classList.add('visible');
-        observer.unobserve(entry.target);
-      });
-    }, { threshold: 0.12 });
+    const formatPhone = (input) => {
+      let value = input.value.replace(/\D/g, '');
+      if (value.length > 11) value = value.substring(0, 11);
+      if (value.length > 6) {
+        input.value = '(' + value.substring(0, 2) + ') ' + value.substring(2, 7) + '-' + value.substring(7);
+        return;
+      }
+      if (value.length > 2) {
+        input.value = '(' + value.substring(0, 2) + ') ' + value.substring(2);
+        return;
+      }
+      input.value = value;
+    };
 
-    document.querySelectorAll('.reveal').forEach((element) => observer.observe(element));
+    const plateInput = document.getElementById('placa-input');
+    plateInput.addEventListener('input', () => {
+      plateInput.value = plateInput.value.toUpperCase().replace(/[^A-Z0-9]/g, '');
+    });
+
+    const phoneInput = document.getElementById('phone-input');
+    phoneInput.addEventListener('input', () => formatPhone(phoneInput));
+
+    document.querySelectorAll('[data-service]').forEach((link) => {
+      link.addEventListener('click', () => {
+        document.getElementById('service-type').value = link.dataset.service;
+      });
+    });
+
+    const bookingForm = document.getElementById('booking-form');
+    bookingForm.addEventListener('submit', (event) => {
+      event.preventDefault();
+      if (!bookingForm.reportValidity()) return;
+
+      const serviceNames = {
+        transferencia: 'Vistoria de transferência',
+        cautelar: 'Vistoria cautelar (compra e venda)',
+        preventiva: 'Vistoria preventiva',
+        'segunda-via': 'Segunda via / regularização'
+      };
+      const shift = document.querySelector('input[name="shift"]:checked').value;
+      const message = [
+        'Olá! Gostaria de solicitar um atendimento na Gil Vistoria Veicular de Alegre.',
+        '',
+        `Placa: ${plateInput.value}`,
+        `Telefone: ${phoneInput.value}`,
+        `Serviço: ${serviceNames[document.getElementById('service-type').value]}`,
+        `Turno preferido: ${shift}`
+      ].join('\n');
+
+      document.getElementById('message-output').value = message;
+      document.getElementById('booking-success').classList.remove('hidden');
+      document.getElementById('booking-success').scrollIntoView({ behavior: 'smooth', block: 'center' });
+    });
+
+    document.getElementById('copy-message').addEventListener('click', async (event) => {
+      const button = event.currentTarget;
+      try {
+        await navigator.clipboard.writeText(document.getElementById('message-output').value);
+        button.lastChild.textContent = ' Mensagem copiada';
+      } catch (error) {
+        console.error(error);
+        document.getElementById('message-output').select();
+        button.lastChild.textContent = ' Selecione e copie';
+      }
+    });
+
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
